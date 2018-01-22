@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(https://images.pexels.com/photos/159627/pencils-clips-colour-pencils-foam-rubber-159627.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+    background-size: cover;
+}
+.board{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    .title{
+        font-size: 60px;
+        font-family: 'Kavivanar', cursive;
+        color: white;
+    }
+    .create-column{
+        font-family: 'Kavivanar', cursive;
+    }
+    .column{
+        display: inline-block;
+        float: left;
+        width: 30%;
+        min-height: 450px;
+        background-color: rgba(22, 247, 170, 0.5);
+        margin-top: 50px;
+        border: 1px solid grey;
+        border-left: none;
+        border-radius: 10px;
+        margin-left: 1%;
+        padding: 1%;
+        &:first-child{
+            border-left: 1px solid grey; 
+            margin-left: 5%;
+        }
+        .column-title{
+            font-family: 'Kavivanar', cursive;
+            font-size: 38px;
+            color: #2c3e50;
+        }
+        ul{
+            list-style-type: none;
+            margin-top: 20px;
+            padding: 0;
+            min-height: 300px;
+            p{
+                font-size: 16px;
+                font-family: 'Kavivanar', cursive;
+                letter-spacing: 1px;
+                color: white;
+                border: 1px solid yellowgreen;
+                border-radius: 5px;
+                padding: 5px;
+                background-color: rgba(40, 40, 40, 0.7);
+                cursor: move;
+                float: left;
+                width: 85%;
+            }
+            .btn-delete{
+                border-radius: 5px;
+                padding: 5px 0;
+                float: left;
+                width: 15%;
+            }
+        }
+    }
+    
+}
